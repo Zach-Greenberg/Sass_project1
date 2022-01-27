@@ -124,8 +124,8 @@
   background: #272727;
   list-style-type: none;
   padding-right: 1rem;
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -133,6 +133,22 @@
 .nav .menu-nav.open {
   -webkit-transform: translate(0);
           transform: translate(0);
+}
+
+.nav .menu-nav_item {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .menu-nav_item.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav .menu-nav_item.active > a {
+  color: #ff652f;
 }
 
 body {
