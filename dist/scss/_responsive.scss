@@ -33,7 +33,7 @@
           height: 40vh;
         }
         &_items {
-          grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
         .text-secondary {
           font-size: 3rem;
